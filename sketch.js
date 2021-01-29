@@ -37,6 +37,6 @@ function draw() {
 }
 function keyPresssed(){
   if(keyCode===32){
-  Matter.Body.applyForce(basketball.body, basketball.body.position,{x:28,Y:-40})
+  Matter.Body.applyForce(basketball.body, basketball.body.position,{x:28,y:-40})
 }
 }
