@@ -19,7 +19,7 @@ function setup() {
  world = engine.world;
  Engine.run(engine);
 
-  net = createSprite(700, 200, 50, 50);
+  net = createSprite(700, 100, 50, 50);
   net.addImage(netImg)
   net.scale = 0.08;
   boy = createSprite(200,440,50,50);
@@ -35,8 +35,8 @@ function draw() {
   basketball.display();
   drawSprites();
 }
-function keyPresssed(){
+function keyPressed(){
   if(keyCode===32){
-  Matter.Body.applyForce(basketball.body, basketball.body.position,{x:28,y:-40})
+  Matter.Body.applyForce(basketball.body,basketball.body.position,{x:30,y:-50})
 }
 }

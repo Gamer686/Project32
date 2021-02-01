@@ -1,9 +1,9 @@
 class Basketball{
-constructor(x,y,radius){
+constructor(x,y){
 var options={
     isStatic:false,
-    restitution:0,
-    friction:0,
+    restitution:0.4,
+    friction:0.3,
     density:1.2
 }
 this.body = Bodies.circle(150,10,15,options);
